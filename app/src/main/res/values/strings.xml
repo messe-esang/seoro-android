@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">seoro서로</string>
+
+    <!-- notification -->
+    <string name="notification_channel_id">notification_channel_id_normal01</string>
+    <string name="notification_channel_name">일반</string>
+    <string name="notification_channel_description"></string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">887172168371214</string>
+    <string name="fb_login_protocol_scheme">fb887172168371214</string>
+    <string name="facebook_client_token">aa01d4e70dc15c66d3236528d321a894</string>
+
+    <!-- Kakao -->
+    <string name="kakao_app_key">04490e9ffe9025656a0d108a07741d71</string>
+    <string name="kakao_scheme">kakao04490e9ffe9025656a0d108a07741d71</string>
+    <string name="kakaolink_host">kakaolink</string>
+    <string name="kakaologin_host">oauth</string>
+</resources>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+
+        <package android:name="com.kakao.talk" /> <!-- 카카오톡 -->
+        <package android:name="com.nhn.android.search" /> <!-- 네이버페이 -->
+        <package android:name="com.samsung.android.spay" /> <!-- 삼성페이 -->
+        <package android:name="net.ib.android.smcard" /> <!-- 모니모페이 -->
+        <package android:name="com.mobiletoong.travelwallet" /> <!-- 신한카드 트레블월렛 -->
+        <package android:name="com.samsung.android.spaylite" /> <!-- 삼성페이 -->
+        <package android:name="com.ssg.serviceapp.android.egiftcertificate" /> <!-- SSGPAY -->
+        <package android:name="com.nhnent.payapp" /> <!-- PAYCO -->
+        <package android:name="com.lottemembers.android" /> <!-- L.POINT -->
+        <package android:name="viva.republica.toss" /> <!-- 토스 -->
+        <package android:name="com.shinhan.smartcaremgr" /> <!-- 신한 슈퍼SOL -->
+        <package android:name="com.shcard.smartpay" /> <!-- 신한페이판 -->
+        <package android:name="com.hyundaicard.appcard" /> <!-- 현대카드 -->
+        <package android:name="kr.co.samsungcard.mpocket" /> <!-- 삼성카드 -->
+        <package android:name="nh.smart.nhallonepay" /> <!-- 올원페이 -->
+        <package android:name="com.kbcard.cxh.appcard" /> <!-- KB Pay -->
+        <package android:name="com.kbstar.liivbank" /> <!-- Liiv(KB국민은행) -->
+        <package android:name="com.kbstar.reboot" /> <!-- Liiv Reboot(KB국민은행) -->
+        <package android:name="com.kbstar.kbbank" /> <!-- 스타뱅킹(KB국민은행) -->
+        <package android:name="kvp.jjy.MispAndroid320" /> <!-- ISP/페이북 -->
+        <package android:name="com.lcacApp" /> <!-- 롯데카드 -->
+        <package android:name="com.hanaskcard.paycla" /> <!-- 하나카드 -->
+        <package android:name="kr.co.hanamembers.hmscustomer" /> <!-- 하나멤버스 -->
+        <package android:name="kr.co.citibank.citimobile" /> <!-- 씨티모바일 -->
+        <package android:name="com.wooricard.wpay" /> <!-- 우리페이 -->
+        <package android:name="com.wooricard.smartapp" /> <!-- 우리카드 -->
+        <package android:name="com.wooribank.smart.npib" /> <!-- 우리WON뱅킹 -->
+        <package android:name="com.kakaobank.channel" /> <!-- 카카오뱅크 -->
+        <package android:name="com.lge.lgpay" /> <!-- 엘지페이 -->
+        <package android:name="com.lgt.tmoney" /> <!-- 모바일티머니 -->
+        <package android:name="com.inicis.kpay" />
+        <package android:name="com.tmoney.tmpay" />
+        <package android:name="finance.chai.app" />
+        <!-- 백신 -->
+        <package android:name="com.TouchEn.mVaccine.webs" /> <!-- TouchEn mVaccine (신한) -->
+        <package android:name="com.ahnlab.v3mobileplus" /> <!-- V3 (NH, 현대) -->
+        <package android:name="kr.co.shiftworks.vguardweb" /> <!-- V-Guard (삼성) -->
+        <!-- 신용카드 공인인증 -->
+        <package android:name="com.shinhancard.smartshinhan" /> <!-- 신한페이판-공동인증서 -->
+        <package android:name="com.hanaskcard.rocomo.potal" /> <!-- 하나카드 -->
+        <package android:name="com.lumensoft.touchenappfree" /> <!-- 현대카드-공동인증서 -->
+        <!-- 계좌이체 -->
+        <package android:name="com.kftc.bankpay.android" /> <!-- 뱅크페이 -->
+        <package android:name="kr.co.kfcc.mobilebank" /> <!-- MG 새마을금고 -->
+        <package android:name="com.nh.cashcardapp" /> <!-- 뱅크페이 -->
+        <package android:name="com.knb.psb" /> <!-- BNK경남은행 -->
+        <package android:name="com.lguplus.paynow" /> <!-- 페이나우 -->
+        <package android:name="com.kbankwith.smartbank" /> <!-- 케이뱅크 -->
+        <!-- 해외결제 -->
+        <package android:name="com.eg.android.AlipayGphone" /> <!-- 페이나우 -->
+        <!-- 기타 -->
+        <package android:name="com.sktelecom.tauth" /> <!-- PASS(SKT) -->
+        <package android:name="com.lguplus.smartotp" /> <!-- PASS(LGT) -->
+        <package android:name="com.kt.ktauth" /> <!-- PASS(KT) -->
+        <package android:name="kr.danal.app.damoum" /> <!-- 다날 다모음 -->
+        <package android:name="com.shinhan.sbanking" /> <!-- 신한 SOL뱅크 -->
+
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Seoroandroid"
+        tools:replace="android:fullBackupContent">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/kakao_scheme" />
+                <data android:host="@string/kakaolink_host" />
+                <data android:scheme="seoroappsflyer" />
+                <data android:host="seoro" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".payment.PayActivity"
+            android:alwaysRetainTaskState="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.WebActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CertWebActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".payment.ResultRcvActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="card_pay"
+                    android:scheme="seoropay" />
+            </intent-filter>
+        </activity>
+        <!-- FCM Start -->
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/white" />
+        <!-- FCM End -->
+        <!-- Appsflyer Start-->
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <!-- Appsflyer End-->
+        <!-- FileProvider Start -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

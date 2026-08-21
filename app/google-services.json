@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "954071210884",
+    "project_id": "seoro-3c5b3",
+    "storage_bucket": "seoro-3c5b3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954071210884:android:dde2d4e43572bf4ed11bd1",
+        "android_client_info": {
+          "package_name": "com.messe.seoro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ZDQsWSpNfm7ibKlxKZnoUG9nFjKavXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

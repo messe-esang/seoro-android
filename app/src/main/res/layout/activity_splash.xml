@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- A -->
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_bg_01" />
+
+    <ImageView
+        android:id="@+id/imageA_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_logo_01" />
+
+    <!-- B -->
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_bg_02" />
+
+    <ImageView
+        android:id="@+id/imageB_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:alpha="0"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_logo_02" />
+    <!--    &lt;!&ndash; A 이미지 &ndash;&gt;-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageA"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@drawable/splash_bg_01" /> &lt;!&ndash; B 이미지 &ndash;&gt;-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageB"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:alpha="0"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:src="@drawable/splash_bg_02" />-->
+
+</RelativeLayout><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:id="@+id/splash_layout"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@color/white"-->
+    <!--    android:fitsSystemWindows="true"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <View-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="3" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/logo"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="7"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/logo_img"-->
+    <!--            android:layout_width="250dp"-->
+    <!--            android:layout_height="80dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginBottom="30dp"-->
+    <!--            android:scaleType="fitXY"-->
+    <!--            android:src="@drawable/splash_img" />-->
+    <!--    </LinearLayout>-->
+
+    <!--</LinearLayout>-->
