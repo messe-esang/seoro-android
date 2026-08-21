@@ -212,9 +212,7 @@ public abstract class BaseLoginActivity extends BaseActivity {
 
     protected String getLoginName(String loginType) {
         String loginName = "";
-        if (loginType.equals(PrefKit.MEMBER_TYPE_FACEBOOK)) {
-            loginName = "페이스북";
-        } else if (loginType.equals(PrefKit.MEMBER_TYPE_KAKAO)) {
+        if (loginType.equals(PrefKit.MEMBER_TYPE_KAKAO)) {
             loginName = "카카오";
         } else if (loginType.equals(PrefKit.MEMBER_TYPE_NAVER)) {
             loginName = "네이버";

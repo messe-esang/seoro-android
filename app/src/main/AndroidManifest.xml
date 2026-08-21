@@ -23,7 +23,6 @@
         tools:ignore="ScopedStorage" />
 
     <queries>
-        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
 
         <package android:name="com.kakao.talk" /> <!-- 카카오톡 -->
         <package android:name="com.nhn.android.search" /> <!-- 네이버페이 -->

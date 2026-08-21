@@ -9,7 +9,6 @@ public class PrefKit {
 
     public static final String PREF_UUID = "uuid";
 
-    public static final String MEMBER_TYPE_FACEBOOK = "facebook";
     public static final String MEMBER_TYPE_KAKAO = "kakao";
     public static final String MEMBER_TYPE_NAVER = "naver";
 
