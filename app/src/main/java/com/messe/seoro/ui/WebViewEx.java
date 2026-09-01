@@ -139,7 +139,7 @@ public class WebViewEx extends WebView implements NestedScrollingChild {
             s.setSupportZoom(false);
             s.setDomStorageEnabled(true);
             s.setSupportMultipleWindows(true);
-            s.setTextZoom(110);
+            s.setTextZoom(98);
 
             setLayerType(View.LAYER_TYPE_HARDWARE, null);
             s.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);

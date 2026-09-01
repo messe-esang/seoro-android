@@ -121,7 +121,7 @@ public class PayActivity extends BaseActivity {
 
         mWebView.getSettings().setDomStorageEnabled(true);
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.getSettings().setTextZoom(110);
+        mWebView.getSettings().setTextZoom(98);
         mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         mWebView.addJavascriptInterface(mPayActivityInterface, SCHEME_APP);
 
