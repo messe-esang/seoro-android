@@ -45,7 +45,7 @@ public class MyApplication extends Application {
     public static boolean SIDE_MENU_OPEN_CHECK = false;
 
     //# Appsflyer Start
-    private static final String AF_DEV_KEY = "T6pTVKur8h6JuTmhMHAeM7";
+    private static final String AF_DEV_KEY = "55hRi5RBcfsG6AdxySX3BB";
     public static final String LOG_TAG = "MyApplication";
     //# Appsflyer End
 

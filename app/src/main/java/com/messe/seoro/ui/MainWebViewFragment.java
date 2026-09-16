@@ -1,7 +1,14 @@
 package com.messe.seoro.ui;
 
 import static com.messe.seoro.MyApplication.SIDE_MENU_OPEN_CHECK;
+import static com.messe.seoro.kit.TelKit.PATH_CATEGORIES;
+import static com.messe.seoro.kit.TelKit.PATH_EVENTS;
 import static com.messe.seoro.kit.TelKit.PATH_HOME;
+import static com.messe.seoro.kit.TelKit.PATH_HOST_INTRO;
+import static com.messe.seoro.kit.TelKit.PATH_MESSAGES;
+import static com.messe.seoro.kit.TelKit.PATH_MYPAGE;
+import static com.messe.seoro.kit.TelKit.PATH_MY_EVENT;
+import static com.messe.seoro.kit.TelKit.PATH_SEARCH;
 import static com.messe.seoro.kit.TelKit.URL_BASE_PRD;
 import static com.messe.seoro.ui.MainActivity.backPressCloseHandler;
 
@@ -74,12 +81,22 @@ public class MainWebViewFragment extends Fragment {
 
                         if (mWebViewEx.canGoBack()) {
                             if (Objects.equals(mWebViewEx.getUrl(), URL_BASE_PRD + PATH_HOME)) {
+                                Log.e(TAG, "mWebViewEx.canGoBack()");
                                 backPressCloseHandler.onBackPressed();
                             } else {
+                                Log.e(TAG, "mWebViewEx.goBack()");
                                 mWebViewEx.goBack();
                             }
                         } else {
-                            backPressCloseHandler.onBackPressed();
+                            if (Objects.requireNonNull(mWebViewEx.getUrl()).contains(PATH_MY_EVENT) || Objects.requireNonNull(mWebViewEx.getUrl()).contains(PATH_SEARCH) || Objects.requireNonNull(mWebViewEx.getUrl()).contains(PATH_MESSAGES)
+                                    || Objects.requireNonNull(mWebViewEx.getUrl()).contains(PATH_CATEGORIES) || Objects.requireNonNull(mWebViewEx.getUrl()).contains(PATH_EVENTS) || Objects.requireNonNull(mWebViewEx.getUrl()).contains(PATH_MYPAGE)
+                                    || Objects.requireNonNull(mWebViewEx.getUrl()).contains(PATH_HOST_INTRO)) {
+                                Log.e(TAG, "mWebViewEx.canGoBack() null");
+                                loadUrl(URL_BASE_PRD + PATH_HOME);
+                            } else {
+                                Log.e(TAG, "mWebViewEx.canGoBack() null null");
+                                backPressCloseHandler.onBackPressed();
+                            }
                         }
                     }
                 }

@@ -39,6 +39,10 @@ public class TelKit {
     public static final String PATH_MY_EVENT = "/my-events";
     public static final String PATH_SEARCH = "/search"; // 검색
     public static final String PATH_MESSAGES = "/messages";
+    public static final String PATH_CATEGORIES = "/categories";
+    public static final String PATH_EVENTS = "/events";
+    public static final String PATH_MYPAGE = "/mypage";
+    public static final String PATH_HOST_INTRO = "/host-intro";
     public static final String PATH_AUTH_LOGIN = "/auth/login";
 
     public static final String PATH_REQUEST_DEVICE_INFO = "/api/common/saveMemberDevice";
