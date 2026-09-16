@@ -119,6 +119,8 @@
                 <data android:host="@string/kakaolink_host" />
                 <data android:scheme="seoroappsflyer" />
                 <data android:host="seoro" />
+                <data android:scheme="https" />
+                <data android:host="seoro.onelink.me" />
             </intent-filter>
         </activity>
         <activity

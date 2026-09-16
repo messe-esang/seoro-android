@@ -194,7 +194,11 @@ public class SplashActivity extends BaseActivity implements TelKit.OnResultListe
                                     IR_CD_Value = ir_cd;
                                 }
                                 if (Kit.isNotNullNotEmpty(URL_Value)) {
-                                    intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
+                                    if(URL_Value.contains("?")) {
+                                        intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "&ir_cd=" + IR_CD_Value);
+                                    } else {
+                                        intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
+                                    }
                                 } else {
                                     intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + PATH_HOME + "?ir_cd=" + IR_CD_Value);
                                 }
@@ -209,12 +213,20 @@ public class SplashActivity extends BaseActivity implements TelKit.OnResultListe
                             }
                         } else if (Kit.isNotNullNotEmpty(IR_CD_Value)) {  //uri가 Null 이고 Firebase DynamicLink 로 들어오는 경우 Start
                             if (Kit.isNotNullNotEmpty(URL_Value)) {
-                                intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
+                                if(URL_Value.contains("?")) {
+                                    intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "&ir_cd=" + IR_CD_Value);
+                                } else {
+                                    intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
+                                }
                             } else {
                                 intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + PATH_HOME + "?ir_cd=" + IR_CD_Value);
                             }
                         } else if (Kit.isNotNullNotEmpty(URL_Value)) {
-                            intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
+                            if(URL_Value.contains("?")) {
+                                intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "&ir_cd=" + IR_CD_Value);
+                            } else {
+                                intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
+                            }
                         }
                     }
                     startActivity(intent);
