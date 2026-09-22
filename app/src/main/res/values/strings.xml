@@ -11,4 +11,5 @@
     <string name="kakao_scheme">kakao04490e9ffe9025656a0d108a07741d71</string>
     <string name="kakaolink_host">kakaolink</string>
     <string name="kakaologin_host">oauth</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://withseoro.com/.well-known/assetlinks.json\" }]</string>
 </resources>

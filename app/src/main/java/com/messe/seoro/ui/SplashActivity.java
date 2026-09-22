@@ -194,7 +194,7 @@ public class SplashActivity extends BaseActivity implements TelKit.OnResultListe
                                     IR_CD_Value = ir_cd;
                                 }
                                 if (Kit.isNotNullNotEmpty(URL_Value)) {
-                                    if(URL_Value.contains("?")) {
+                                    if (URL_Value.contains("?")) {
                                         intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "&ir_cd=" + IR_CD_Value);
                                     } else {
                                         intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
@@ -210,10 +210,15 @@ public class SplashActivity extends BaseActivity implements TelKit.OnResultListe
                                 } else {
                                     intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + PATH_HOME + "?ir_cd=" + IR_CD_Value);
                                 }
+                            } else {
+                                Log.e(TAG, "SplashActivity::uri:" + uri);
+                                if ("https".equals(uri.getScheme()) && ("withseoro.com".equals(uri.getHost()) || "dev.withseoro.com".equals(uri.getScheme()))) {
+                                    intent.putExtra(Extra.KEY_LINK, String.valueOf(uri));
+                                }
                             }
                         } else if (Kit.isNotNullNotEmpty(IR_CD_Value)) {  //uri가 Null 이고 Firebase DynamicLink 로 들어오는 경우 Start
                             if (Kit.isNotNullNotEmpty(URL_Value)) {
-                                if(URL_Value.contains("?")) {
+                                if (URL_Value.contains("?")) {
                                     intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "&ir_cd=" + IR_CD_Value);
                                 } else {
                                     intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);
@@ -222,7 +227,7 @@ public class SplashActivity extends BaseActivity implements TelKit.OnResultListe
                                 intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + PATH_HOME + "?ir_cd=" + IR_CD_Value);
                             }
                         } else if (Kit.isNotNullNotEmpty(URL_Value)) {
-                            if(URL_Value.contains("?")) {
+                            if (URL_Value.contains("?")) {
                                 intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "&ir_cd=" + IR_CD_Value);
                             } else {
                                 intent.putExtra(Extra.KEY_LINK, URL_BASE_PRD + URL_Value + "/?ir_cd=" + IR_CD_Value);

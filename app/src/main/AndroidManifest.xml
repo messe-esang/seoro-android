@@ -101,6 +101,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Seoroandroid"
         tools:replace="android:fullBackupContent">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
         <activity
             android:name=".ui.SplashActivity"
             android:exported="true">
@@ -115,12 +119,35 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="@string/kakao_scheme" />
-                <data android:host="@string/kakaolink_host" />
-                <data android:scheme="seoroappsflyer" />
-                <data android:host="seoro" />
+                <data android:scheme="https" />
+                <data android:host="withseoro.com" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="https" />
                 <data android:host="seoro.onelink.me" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="seoroappsflyer" />
+                <data android:host="seoro" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/kakao_scheme" />
+                <data android:host="@string/kakaolink_host" />
             </intent-filter>
         </activity>
         <activity
